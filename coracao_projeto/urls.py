@@ -1,5 +1,5 @@
 """
-URL configuration for config project.
+URL configuration for coracao_projeto project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -16,11 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import include
-
-# Define as rotas no projeto
 
 urlpatterns = [
-    path('Home', admin.site.urls),
-    path('', include('core.urls'))# delega rotas para o app
+    path('admin/', admin.site.urls),
 ]
